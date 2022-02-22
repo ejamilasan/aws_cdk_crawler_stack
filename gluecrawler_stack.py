@@ -42,7 +42,7 @@ class GlueCrawlersStack(core.Stack):
         
         # create s3 crawler
         s3_crawler = glue.CfnCrawler(
-            self, "fireeyetest-crawler",
+            self, "test-crawler",
             role = glue_role.role_arn,
             name = crawler_name,
             database_name = s3databasename,
